@@ -1,5 +1,11 @@
 $card-slider_card-width: 30vmax;
 
+// *,
+// *:before,
+// *:after {
+//     box-sizing: border-box;
+// }
+
 .text-center {
     text-align: center;
 }
@@ -15,7 +21,7 @@ $card-slider_card-width: 30vmax;
     position: relative;
     overflow: visible;
     margin: 0 auto;
-
+    // background: goldenrod;
 }
 
 .card-slider_list {
