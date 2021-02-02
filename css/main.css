@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 .text-center {
   text-align: center;
 }
@@ -63,18 +57,11 @@
   background: white;
   padding: 15px 15px 0;
   border: 1px solid #eee;
-  box-shadow: 0 2px 15px 0 rgba(67, 134, 179, 0.25);
+  box-shadow: 14px 16px 14px 0px rgba(0, 0, 0, 0.25);
   height: 100%;
-  border-radius: 5px;
+  border-radius: 25px;
   font-size: 18px;
   font-family: sans-serif;
-}
-.panel h3 {
-  background: #0A9928;
-  color: white;
-  margin: -15px -15px 15px;
-  padding: 30px 15px;
-  border-radius: 4px 4px 0 0;
 }
 
 @keyframes activeInRight {
@@ -170,6 +157,12 @@
   color: white !important;
 }
 
+.btn-text {
+  font-family: "poppins", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
 .judul-hero {
   font-family: "Poppins", sans-serif !important;
   font-size: 36px !important;
@@ -228,7 +221,7 @@
 }
 
 .keunggulan-gmbr {
-  width: 80vmin;
+  width: 70vmin;
 }
 
 .sub-keunggulan {
@@ -265,14 +258,16 @@
   background-color: #4BD01C !important;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   padding: 10px;
   border-radius: 50px;
   color: white !important;
   z-index: 999 !important;
 }
 .btn-green:hover {
-  opacity: 0.8;
+  transition: transform 0.3s;
+  transform: scale(1.2);
+  background-color: rgba(21, 255, 0, 0.527);
 }
 
 .team-kami {
@@ -290,6 +285,19 @@
   height: 2px;
   border-radius: 50px;
   background-color: white !important;
+}
+
+.judul-testi {
+  font-family: "poppins", sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  color: white !important;
+}
+
+.nama {
+  font-family: "poppins", sans-serif !important;
+  font-size: 26px !important;
+  font-weight: 800 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
