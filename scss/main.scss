@@ -1,0 +1,152 @@
+@import "./font";
+@import "./variabel";
+@import "./sliderCard";
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.position-relative {
+    top: 30px;
+}
+
+.nav-link {
+    @include robotoregular(20px);
+    color: white !important;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        border-radius: 10px;
+        background: white !important;
+        transition: all .3s linear;
+        color: white !important;
+
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+
+
+    &.active1 {
+        text-transform: uppercase;
+        color: white !important;
+
+    }
+
+    &.active1::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: white !important;
+        text-transform: uppercase;
+        color: white !important;
+
+    }
+}
+
+.judul-hero {
+    @include poppinsbold(700);
+}
+
+.hero-title {
+    @include robotoregular(24px);
+    color: white !important;
+}
+
+.btn-secondary1 {
+    background-color: $secondary;
+    color: white !important;
+
+}
+
+.btn-primary1 {
+    background-color: $primary;
+    color: white !important;
+}
+
+.layanan {
+    @include poppinsbold (800);
+    color: black !important;
+}
+
+.layanan-title {
+    @include robotoregular(20px);
+}
+
+.sub-judul {
+    margin-top: 100px;
+}
+
+.layanan-judul {
+    @include poppinsbold(800);
+    font-size: 36px !important;
+    color: black !important;
+}
+
+.Keunggulan-title {
+    @include robotoregular(22px);
+}
+
+.keunggulan-gmbr {
+    width: 80vmin;
+    // height: 30vh;
+}
+
+.sub-keunggulan {
+    margin-top: 100px;
+
+    .keunggulan {
+        @include poppinsbold (700);
+        color: black !important;
+        font-size: 28px !important;
+    }
+
+    .text-keunggulan {
+        @include robotoslim (20px);
+    }
+}
+
+.grative {
+    margin-top: 70px;
+}
+
+.title-brands {
+    @include poppinslim(400);
+}
+
+.btn-green {
+    @include poppinsCustom(800, 20px);
+    background-color: $green;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    color: white !important;
+    z-index: 999 !important;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.team-kami {
+    @include poppinsbold (800);
+    font-size: 48px !important;
+    color: black !important;
+    margin-top: 60px;
+}
+
+.garis {
+    width: 100%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: white !important;
+
+}

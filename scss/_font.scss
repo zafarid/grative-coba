@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@mixin robotoregular ($font-size) {
+    font-family: 'roboto'sans-serif !important;
+    font-size: $font-size !important;
+    font-weight: 400 !important;
+}
+
+@mixin robotoslim ($font-size) {
+    font-family: 'roboto'sans-serif !important;
+    font-size: $font-size !important;
+    font-weight: 300 !important;
+}
+
+@mixin poppinsbold ($font-weight) {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 36px !important;
+    font-weight: $font-weight !important;
+    color: white !important;
+}
+
+@mixin poppinslim ($font-weight) {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: $font-weight !important;
+}
+
+@mixin poppinsCustom ($font-weigt, $font-size) {
+    font-family: 'poppins', sans-serif !important;
+    font-size: $font-size !important;
+    font-weight: $font-weigt !important;
+}
