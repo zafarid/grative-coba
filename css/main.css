@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container1 {
+  overflow: hidden;
+  padding: 50px 0;
+  background-color: #2C6AE5 !important;
+}
+
+.card-slider {
+  width: 30vmax;
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.card-slider_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-slider_card {
+  width: 30vmax;
+  display: inline-block;
+  position: relative;
+  transform: scale(0.8);
+  z-index: 1;
+  flex-shrink: 0;
+}
+.card-slider_card.active-out {
+  animation: activeOutLeft 0.5s ease-in-out;
+}
+.active-in ~ .card-slider_card.active-out {
+  animation: activeOutRight 0.5s ease-in-out;
+}
+.active ~ .card-slider_card {
+  margin-right: 0;
+}
+.card-slider_card.active {
+  transform: scale(1);
+  z-index: 3;
+  margin: 0;
+}
+.card-slider_card.active-in {
+  animation: activeInLeft 0.5s ease-in-out;
+}
+.active-out ~ .card-slider_card.active-in {
+  animation: activeInRight 0.5s ease-in-out;
+}
+
+.panel {
+  background: white;
+  padding: 15px 15px 0;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 15px 0 rgba(67, 134, 179, 0.25);
+  height: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.panel h3 {
+  background: #0A9928;
+  color: white;
+  margin: -15px -15px 15px;
+  padding: 30px 15px;
+  border-radius: 4px 4px 0 0;
+}
+
+@keyframes activeInRight {
+  0% {
+    transform: scale(0.8);
+    z-index: 2;
+  }
+  50% {
+    transform: translateX(20%) scale(0.9);
+    z-index: 3;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes activeOutLeft {
+  0% {
+    transform: scale(1);
+    z-index: 3;
+  }
+  50% {
+    transform: translateX(-20%) scale(0.9);
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(0) scale(0.8);
+  }
+}
+@keyframes activeInLeft {
+  0% {
+    transform: scale(0.8);
+    z-index: 2;
+  }
+  50% {
+    transform: translateX(-20%) scale(0.9);
+    z-index: 3;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes activeOutRight {
+  0% {
+    transform: scale(1);
+    z-index: 3;
+  }
+  50% {
+    transform: translateX(20%) scale(0.9);
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(0) scale(0.8);
+  }
+}
+.bg-primary {
+  background-color: #2C6AE5 !important;
+}
+
+.position-relative {
+  top: 30px;
+}
+
+.nav-link {
+  font-family: "roboto" sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: white !important;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  border-radius: 10px;
+  background: white !important;
+  transition: all 0.3s linear;
+  color: white !important;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active1 {
+  text-transform: uppercase;
+  color: white !important;
+}
+.nav-link.active1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white !important;
+  text-transform: uppercase;
+  color: white !important;
+}
+
+.judul-hero {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: white !important;
+}
+
+.hero-title {
+  font-family: "roboto" sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  color: white !important;
+}
+
+.btn-secondary1 {
+  background-color: #FF9900 !important;
+  color: white !important;
+}
+
+.btn-primary1 {
+  background-color: #2C6AE5 !important;
+  color: white !important;
+}
+
+.layanan {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: white !important;
+  color: black !important;
+}
+
+.layanan-title {
+  font-family: "roboto" sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+.sub-judul {
+  margin-top: 100px;
+}
+
+.layanan-judul {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: white !important;
+  font-size: 36px !important;
+  color: black !important;
+}
+
+.Keunggulan-title {
+  font-family: "roboto" sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+}
+
+.keunggulan-gmbr {
+  width: 80vmin;
+}
+
+.sub-keunggulan {
+  margin-top: 100px;
+}
+.sub-keunggulan .keunggulan {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  color: black !important;
+  font-size: 28px !important;
+}
+.sub-keunggulan .text-keunggulan {
+  font-family: "roboto" sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 300 !important;
+}
+
+.grative {
+  margin-top: 70px;
+}
+
+.title-brands {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+}
+
+.btn-green {
+  font-family: "poppins", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  background-color: #4BD01C !important;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  color: white !important;
+  z-index: 999 !important;
+}
+.btn-green:hover {
+  opacity: 0.8;
+}
+
+.team-kami {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: white !important;
+  font-size: 48px !important;
+  color: black !important;
+  margin-top: 60px;
+}
+
+.garis {
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  background-color: white !important;
+}
+
+/*# sourceMappingURL=main.css.map */
